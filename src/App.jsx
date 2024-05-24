@@ -8,9 +8,7 @@ import Description from "./components/Description/Description";
 function App() {
   const [feedback, setFeedback] = useState(() => {
     const savedFeedback = localStorage.getItem("feedback");
-    return savedFeedback
-      ? JSON.parse(savedFeedback)
-      : { good: 0, neutral: 0, bad: 0 };
+    return savedFeedback ? JSON.parse(savedFeedback) : { good: 0, neutral: 0, bad: 0 };
   });
 
   useEffect(() => {
@@ -32,9 +30,7 @@ function App() {
   };
 
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
-  const positivePercentage = totalFeedback
-    ? Math.round((feedback.good / totalFeedback) * 100)
-    : 0;
+  const positivePercentage = totalFeedback ? Math.round((feedback.good / totalFeedback) * 100): 0;
 
   return (
     <>

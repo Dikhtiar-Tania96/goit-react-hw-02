@@ -1,7 +1,16 @@
 .optionsBtn{
     margin: 5px;
     padding: 8px;
-    background-color: lightgray;
-    border: 1px solid, black;
-    border-radius: 2px;
+    background-color: white;
+    border: 3px solid, yellowgreen;
+    border-radius: 5px;
 }
+
+.optionsBtnRes{
+    margin: 5px;
+    padding: 8px;
+    background-color: red;
+    border: 3px solid, yellowgreen;
+    border-radius: 5px;
+}
+
